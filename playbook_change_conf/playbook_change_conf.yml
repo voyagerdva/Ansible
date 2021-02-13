@@ -1,0 +1,6 @@
+- name:  uncomment a line
+  lineinfile: dest=/etc/lighttpd/lighttpd.conf
+    regexp='^   include "mod_fastc gi.conf"'
+    insertafter='^#   include "mod_fastc gi.conf"'
+    line='   include "mod_fastc gi.conf"'
+    state=present

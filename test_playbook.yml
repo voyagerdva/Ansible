@@ -1,0 +1,9 @@
+name: test_playbook
+hosts: all
+become: yes
+
+tasks:
+
+  - name: test
+    copy: 
+
